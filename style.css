@@ -1,0 +1,163 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.2%;
+}
+
+.text{
+    text-align: left;
+}
+
+.grid1 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.carta img {
+    width: 10rem;
+    transition: transform 0.1s;
+}
+
+.carta img:hover {
+    transform: scale(1.5);
+}
+.carta {
+    margin-left: 7%;
+}
+.Boosters {
+    margin-left: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: auto;
+}
+
+.Commander {
+    margin-left: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: auto;
+}
+
+.Acessorios {
+    margin-left: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: auto;
+}
+
+.primeiro {
+    margin-left: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.retorno {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    color: inherit; 
+}
+.cartah img:hover {
+    transform: scale(1.5);
+}
+
+.tabelas {
+    height: 30%;
+    width: 70%;
+    background-color: rgb(151, 151, 151);
+    border-radius: 7px;
+    border: 7px;
+    padding: 10px;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+.tab_header {
+    height: 30%;
+    width: 50%;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
+    border: 10px;
+    color: aliceblue;
+    margin-bottom: -5%;
+}
+.td1 {
+    color: aliceblue;
+    padding: auto;
+    margin-left: -5%;
+}
+.td2 {
+    color: aliceblue;
+    padding: auto;
+}
+.td3 {
+
+    color: aliceblue;
+    padding: auto;
+}
+.td4{
+
+    color: aliceblue;
+    padding: auto;
+}
+.td5{
+
+    color: aliceblue;
+    width: 100%;
+    padding: auto;
+}
+.tr {
+    color: aliceblue;
+}
+.btão {
+    background-color: red;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+.adj {
+    width: 5%px;
+    height: 25%;
+}
+
+.card-img-top{
+    padding: 5%;
+}
+.cardp{
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 3%;
+    margin-top: 1%;
+    margin: 5%;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 60%;
+    height: 20%;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 0, 0);
+}
+.btn-group{
+    padding-right: 30%;
+    padding-left: 30%;
+    margin-left: 10%;
+}
+
