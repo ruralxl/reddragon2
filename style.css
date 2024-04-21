@@ -11,12 +11,6 @@
     object-fit: cover;
 }
 
-p {
-    max-width: 25ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 
 .caroussel :where(.cartas, .img){
     display: flex;
@@ -32,7 +26,6 @@ p {
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    scroll-snap-align: start;
     padding-left: 0.1px;
     
 
@@ -46,9 +39,40 @@ p {
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    scroll-snap-align: start;
     
 }
 
+.caroussel2 :where(.cartas, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .caroussel2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((90% / 6) + 30.2px);
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-left: 0.1px;
+    
+
+}
+
+
+.caroussel2 .cartas{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    scroll-snap-align: start;
+    
+}
 
 
 .wrapper{
@@ -125,9 +149,32 @@ p {
 a {
     color: inherit; 
 }
+
+
+.wrapper p {
+        max-width: 25ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
 .cartah img:hover {
     transform: scale(1.5);
 }
+
+.cartah img {
+    transition: transform 0.1s;
+}
+
+.card img:hover {
+    transform: scale(1.5);
+}
+
+.card img {
+    transition: transform 0.1s;
+}
+
 
 .tabelas {
     height: 30%;
@@ -216,8 +263,25 @@ h3,h5{
     margin-left: 10%;
 }
 
+
+@media screen and (max-width: 1350px){
+    p {
+        max-width: 19ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+    }
+
+}
+
+
 @media screen and (max-width: 1205px){
     .wrapper .caroussel {
+        grid-auto-columns: calc((100% / 5) - 4px );
+    }
+
+    .wrapper .caroussel2 {
         grid-auto-columns: calc((100% / 5) - 4px );
     }
 
@@ -228,11 +292,23 @@ h3,h5{
     .wrapper i:last-child {
         right: -4.5%;
     }
+
+    p {
+        max-width: 18ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+    }
 }
 
 @media screen and (max-width: 905px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 4) - 2px );
+        grid-auto-columns: calc((100% / 4) - 3px );
+    }
+
+    .wrapper .caroussel2 {
+        grid-auto-columns: calc((100% / 4) - 3px );
     }
     .wrapper i:first-child {
         left: -5%;
@@ -242,11 +318,27 @@ h3,h5{
         right: -5%;
     }
     
+    p {
+        max-width: 16ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+    }
 }
+
+@media screen and (max-width: 770px){
+   
+}
+
 
 @media screen and (max-width: 660px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 3) - 35px );
+        grid-auto-columns: calc((100% / 3) - 3px );
+    }
+
+    .wrapper .caroussel2 {
+        grid-auto-columns: calc((100% / 3) - 3px );
     }
 
     .wrapper i:first-child {
@@ -260,11 +352,23 @@ h3,h5{
     h2 {
         text-align: center;
     }
+
+    p {
+        max-width: 13ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+    }
 }
 
 
 @media screen and (max-width: 530px){
     .wrapper .caroussel {
+        grid-auto-columns: calc((100% / 2) - 18px );
+    }
+
+    .wrapper .caroussel2 {
         grid-auto-columns: calc((100% / 2) - 18px );
     }
 
@@ -291,7 +395,13 @@ h3,h5{
 }
 
 @media screen and (max-width:455px){
+
     .wrapper .caroussel {
+        grid-auto-columns: 90%;
+        overflow-x: auto;
+    }
+
+    .wrapper .caroussel2 {
         grid-auto-columns: 90%;
         overflow-x: auto;
     }
@@ -308,7 +418,7 @@ h3,h5{
         
     }
 
-    #Commander   h2 {
+    #font   h2 {
         text-align: center;
     }
     
