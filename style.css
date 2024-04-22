@@ -74,6 +74,62 @@
     
 }
 
+caroussel2 :where(.cartas, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .caroussel3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((90% / 6) + 30.2px);
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-left: 0.1px;
+    
+
+}
+
+
+.caroussel3 .cartas{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    scroll-snap-align: start;
+    
+}
+
+.wrapper .caroussel4 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((90% / 6) + 30.2px);
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-left: 0.1px;
+    
+
+}
+
+
+.caroussel4 .cartas{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    scroll-snap-align: start;
+    
+}
+
 
 .wrapper{
     position: relative;
@@ -117,27 +173,6 @@
 .cartas img:hover {
     transform: scale(1.3);
 }
-
-.Boosters {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-
-    overflow-x: auto;
-}
-
-
-.primeiro {
-    margin-left: 5%;
-    margin-right: 10%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-}
-
 .retorno {
     width: 100%;
     display: flex;
@@ -264,7 +299,7 @@ h3,h5{
 }
 
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1490px){
     p {
         max-width: 19ch;
         overflow: hidden;
@@ -273,16 +308,45 @@ h3,h5{
         
     }
 
+    .wrapper .caroussel {
+        grid-auto-columns: calc((100% / 5) - 2px );
+    }
+
+    .wrapper .caroussel2 {
+        grid-auto-columns: calc((100% / 5) - 2px );
+    }
+
+    .wrapper .caroussel3 {
+        grid-auto-columns: calc((100% / 5) - 2px );
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns: calc((100% / 5) - 2px );
+    }
+
+
+    .wrapper i:last-child {
+        right: -3%;
+    }
+
 }
 
 
 @media screen and (max-width: 1205px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 5) - 4px );
+        grid-auto-columns: calc((90% / 5) + 25px );
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((100% / 5) - 4px );
+        grid-auto-columns: calc((90% / 5) + 25px );
+    }
+
+    .wrapper .caroussel3 {
+        grid-auto-columns: calc((90% / 5) + 25px );
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns: calc((90% / 5) + 25px );
     }
 
     .wrapper i:first-child {
@@ -290,10 +354,10 @@ h3,h5{
     }
     
     .wrapper i:last-child {
-        right: -4.5%;
+        right: -3%;
     }
 
-    p {
+    .wrapper p {
         max-width: 18ch;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -302,13 +366,21 @@ h3,h5{
     }
 }
 
-@media screen and (max-width: 905px){
+@media screen and (max-width: 915px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 4) - 3px );
+        grid-auto-columns: calc((90% / 4) + 20px );
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((100% / 4) - 3px );
+        grid-auto-columns: calc((90% / 4) + 20px );
+    }
+
+    .wrapper .caroussel3 {
+        grid-auto-columns: calc((90% / 4) + 20px );
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns:  calc((90% / 4) + 20px );
     }
     .wrapper i:first-child {
         left: -5%;
@@ -318,7 +390,7 @@ h3,h5{
         right: -5%;
     }
     
-    p {
+    .wrapper p {
         max-width: 16ch;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -327,19 +399,23 @@ h3,h5{
     }
 }
 
-@media screen and (max-width: 770px){
-   
-}
-
-
-@media screen and (max-width: 660px){
+@media screen and (max-width: 740px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 3) - 3px );
+        grid-auto-columns: calc((90% / 3) + 25px );
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((100% / 3) - 3px );
+        grid-auto-columns: calc((90% / 3) + 25px );
     }
+
+    .wrapper .caroussel3 {
+        grid-auto-columns: calc((90% / 3) + 25px );
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns: calc((90% / 3) + 25px );
+    }
+
 
     .wrapper i:first-child {
         left: -7%;
@@ -353,7 +429,7 @@ h3,h5{
         text-align: center;
     }
 
-    p {
+    .wrapper p {
         max-width: 13ch;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -365,22 +441,30 @@ h3,h5{
 
 @media screen and (max-width: 530px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 2) - 18px );
+        grid-auto-columns: calc((90% / 2) + 30px );
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((100% / 2) - 18px );
+        grid-auto-columns: calc((90% / 2) + 30px );
+    }
+
+    .wrapper .caroussel3 {
+        grid-auto-columns: calc((90% / 2) + 30px );
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns: calc((90% / 2) + 30px );
     }
 
     .wrapper i:first-child {
-        left: -9%;
+        left: -6%;
     }
     
     .wrapper i:last-child {
         right: -9%;
     }
 
-    p {
+    .wrapper p {
         max-width: 10ch;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -406,11 +490,21 @@ h3,h5{
         overflow-x: auto;
     }
 
+    .wrapper .caroussel3 {
+        grid-auto-columns: 90%;
+        overflow-x: auto;
+    }
+
+    .wrapper .caroussel4 {
+        grid-auto-columns: 90%;
+        overflow-x: auto;
+    }
+
     .wrapper i {
         display: none;
     }
 
-    p {
+    .wrapper  p {
         max-width: 20ch;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -418,7 +512,7 @@ h3,h5{
         
     }
 
-    #font   h2 {
+    h2 {
         text-align: center;
     }
     
