@@ -7,7 +7,7 @@
 
 .cartas img {
     width: 150px;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -21,7 +21,7 @@
 .wrapper .caroussel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((90% / 6) + 30.2px);
+    grid-auto-columns: calc((100% / 6));
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
@@ -52,7 +52,7 @@
 .wrapper .caroussel2 {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((90% / 6) + 30.2px);
+    grid-auto-columns: calc((100% / 6));
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
@@ -83,7 +83,7 @@ caroussel2 :where(.cartas, .img){
 .wrapper .caroussel3 {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((90% / 6) + 30.2px);
+    grid-auto-columns: calc((100% / 6));
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
@@ -108,12 +108,13 @@ caroussel2 :where(.cartas, .img){
 .wrapper .caroussel4 {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((90% / 6) + 30.2px);
+    grid-auto-columns: calc((100% / 6));
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding-left: 0.1px;
+    
     
 
 }
@@ -133,9 +134,9 @@ caroussel2 :where(.cartas, .img){
 
 .wrapper{
     position: relative;
-    max-width: 1800px;
+    
     width: 90%;
-    margin-left: 5%;
+    margin-left: 5.3%;
 }
 
 .wrapper i {
@@ -145,7 +146,7 @@ caroussel2 :where(.cartas, .img){
     position: absolute;
     top: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     
 }
 
@@ -181,17 +182,16 @@ caroussel2 :where(.cartas, .img){
     text-align: center;
 }
 
+.wrapper p {
+    max-width: 19ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 a {
     color: inherit; 
 }
-
-
-.wrapper p {
-        max-width: 25ch;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
 
 
 .cartah img:hover {
@@ -300,28 +300,22 @@ h3,h5{
 
 
 @media screen and (max-width: 1490px){
-    p {
-        max-width: 19ch;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        
-    }
+
 
     .wrapper .caroussel {
-        grid-auto-columns: calc((100% / 5) - 2px );
+        grid-auto-columns: calc((100% / 6));
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((100% / 5) - 2px );
+        grid-auto-columns: calc((100% / 6));
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: calc((100% / 5) - 2px );
+        grid-auto-columns: calc((100% / 6));
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns: calc((100% / 5) - 2px );
+        grid-auto-columns: calc((100% / 6));
     }
 
 
@@ -332,21 +326,21 @@ h3,h5{
 }
 
 
-@media screen and (max-width: 1205px){
+@media screen and (max-width: 1230px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((90% / 5) + 25px );
+        grid-auto-columns: calc((100% / 5));
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((90% / 5) + 25px );
+        grid-auto-columns: calc((100% / 5));
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: calc((90% / 5) + 25px );
+        grid-auto-columns: calc((100% / 5));
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns: calc((90% / 5) + 25px );
+        grid-auto-columns: calc((100% / 5));
     }
 
     .wrapper i:first-child {
@@ -354,7 +348,7 @@ h3,h5{
     }
     
     .wrapper i:last-child {
-        right: -3%;
+        right: -4.5%;
     }
 
     .wrapper p {
@@ -368,19 +362,19 @@ h3,h5{
 
 @media screen and (max-width: 915px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((90% / 4) + 20px );
+        grid-auto-columns:  calc((100% / 4));
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((90% / 4) + 20px );
+        grid-auto-columns:  calc((100% / 4));
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: calc((90% / 4) + 20px );
+        grid-auto-columns:  calc((100% / 4));
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns:  calc((90% / 4) + 20px );
+        grid-auto-columns:  calc((100% / 4));
     }
     .wrapper i:first-child {
         left: -5%;
@@ -399,30 +393,30 @@ h3,h5{
     }
 }
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 770px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((90% / 3) + 25px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((90% / 3) + 25px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: calc((90% / 3) + 25px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns: calc((90% / 3) + 25px );
+        grid-auto-columns: calc((100% / 3));
     }
 
 
     .wrapper i:first-child {
-        left: -7%;
+        left: -5%;
     }
     
     .wrapper i:last-child {
-        right: -7%;
+        right: -5%;
     }
 
     h2 {
@@ -430,7 +424,7 @@ h3,h5{
     }
 
     .wrapper p {
-        max-width: 13ch;
+        max-width: 18ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -439,21 +433,21 @@ h3,h5{
 }
 
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 670px){
     .wrapper .caroussel {
-        grid-auto-columns: calc((90% / 2) + 30px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: calc((90% / 2) + 30px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: calc((90% / 2) + 30px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns: calc((90% / 2) + 30px );
+        grid-auto-columns: calc((100% / 3));
     }
 
     .wrapper i:first-child {
@@ -461,11 +455,11 @@ h3,h5{
     }
     
     .wrapper i:last-child {
-        right: -9%;
+        right: -6%;
     }
 
     .wrapper p {
-        max-width: 10ch;
+        max-width: 24ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -481,31 +475,32 @@ h3,h5{
 @media screen and (max-width:455px){
 
     .wrapper .caroussel {
-        grid-auto-columns: 90%;
+        grid-auto-columns: 100%;
         overflow-x: auto;
     }
 
     .wrapper .caroussel2 {
-        grid-auto-columns: 90%;
+        grid-auto-columns: 100%;
         overflow-x: auto;
     }
 
     .wrapper .caroussel3 {
-        grid-auto-columns: 90%;
+        grid-auto-columns: 100%;
         overflow-x: auto;
     }
 
     .wrapper .caroussel4 {
-        grid-auto-columns: 90%;
+        grid-auto-columns: 100%;
         overflow-x: auto;
     }
 
+    
     .wrapper i {
         display: none;
     }
 
     .wrapper  p {
-        max-width: 20ch;
+        max-width: 25ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -515,6 +510,8 @@ h3,h5{
     h2 {
         text-align: center;
     }
+
+
     
 }
 
