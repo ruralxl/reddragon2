@@ -54,8 +54,3 @@ const tamanho= carousel.querySelector(".cartas").offsetWidth;
     seta_direita4.addEventListener("click", () => {
         carousel4.scrollLeft += tamanho;
     });
-
-
-
-
-
