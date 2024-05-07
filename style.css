@@ -195,7 +195,7 @@ a {
 
 
 .cartah img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .cartah img {
@@ -203,7 +203,7 @@ a {
 }
 
 .card img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .card img {
@@ -220,6 +220,7 @@ a {
     padding: 10px;
     margin-top: 10%;
     margin-left: 7%;
+    align-items: center;
 }
 .tab_header {
     height: 30%;
@@ -281,9 +282,11 @@ a {
     margin: 5%;
 }
 .btn-primary{
-    border-radius: 50px;
-    width: 60%;
-    height: 20%;
+    width: 100%;
+    height: 15%;
+    margin-top: 2%;
+    background-color: #830e19;
+    border-color: #830e19;
 }
 .btn-primary:hover{
     background-color: black;
@@ -515,3 +518,7 @@ h3,h5{
     
 }
 
+.text {
+    margin-top: 2%;
+    font-size: large;
+}

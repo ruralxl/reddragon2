@@ -1,60 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RedDragon2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-<body>
-
-    <!--coemço navbar-->
-
-    <div class="collapse" id="navbarToggleExternalContent"  style="background-color: #830e19 ;">
-        <div class=" p-4" >
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
-                <ul class="navbar-nav">
-                    <a class="link-offset-2 link-underline link-underline-opacity-0" href="home.html">
-                        <li class="text" id="font" style="color: bisque;">
-                            Home
-                        </li>
-                    </a>
-                    <a class="link-offset-2 link-underline link-underline-opacity-0" href="cards1.html">
-                        <li class="text" id="font" style="color: bisque;">
-                            Cards
-                        </li>
-                    </a>
-                    <a class="link-offset-2 link-underline link-underline-opacity-0" href="produtos_selados.html">
-                        <li class="text" id="font" style="color: bisque;">
-                            Produtos selados
-                        </li>
-                    </a>
-                </ul>
-            </button>
-        </div>
-    </div>
-
-    <!--fim navbar-->
-
-    <!--coemço catalago-->
+    <!--começo navbar-->
 
     <nav class="navbar menu" style="background-color: #9b111e ;">
         <div class="menu">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 5%;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a id="font" class="navbar-brand" href="#" style="color: bisque;" href="home.html">
-                <img src="img/logo.png" alt="Logo"  width="39px" class="d-inline-block" href="home.html">
-                RedDragon2
-            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 5%;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a id="font" class="navbar-brand" href="#" style="color: bisque;" href="home.html">
+            <img src="img/logo.png" alt="Logo"  width="39px" class="d-inline-block" href="home.html">
+            RedDragon2
+          </a>
         </div>
-    </nav>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent"  style="background-color: #830e19 ;">
+        <div class=" p-3" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <ul class="navbar-nav">
+              <a class="link-offset-2 link-underline link-underline-opacity-0" href="home.html">
+                <li class="text" id="font" style="color: bisque;">
+                  Home
+                </li>
+              </a>
+              <a class="link-offset-2 link-underline link-underline-opacity-0" href="cards1.html">
+                <li class="text" id="font" style="color: bisque;">
+                  Cards
+                </li>
+              </a>
+              <a class="link-offset-2 link-underline link-underline-opacity-0" href="produtos_selados.html">
+                <li class="text" id="font" style="color: bisque;">
+                  Produtos selados
+                </li>
+              </a>
+            </ul>
+          </button>
+        </div>
+      </div>
+  
+      <!--fim navbar-->
+
+    <!--coemço catalago-->
+
     <div class="container py-5">
         <h1 class="text-center">Catálogo de Cartas
         </h1>
@@ -65,10 +61,8 @@
                         <img src="img/b1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 id="font" class="card-title">Super Verdict</h5>
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3 id="font">R$20,60</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -85,10 +79,8 @@
                         <img src="img/b2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Hallowed Fountain</h5>
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$50</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -98,11 +90,8 @@
                         <img src="img/b3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Edgar Markov</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$385</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -112,11 +101,8 @@
                         <img src="img/b4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Krenko, Mob Boss</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$19</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -126,11 +112,8 @@
                         <img src="img/b5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Render Silent</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$5</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -140,10 +123,8 @@
                         <img src="img/b6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Juri, Mestre da Trupe</h5>
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$1,95</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -152,11 +133,8 @@
                         <img src="img/b7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Absorb</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$4,60</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -167,11 +145,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Sidísi, Undead Vizler
                             </h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$23,75</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -181,11 +156,8 @@
                         <img src="img/b9.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Terminate</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$2,85</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -195,11 +167,8 @@
                         <img src="img/b10.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Grave Betrayal</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$3,15</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>   
                         </div>
                     </div>
                 </div>
@@ -209,11 +178,8 @@
                         <img src="img/b11.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Elemental das Queimadas</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$0,25</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
@@ -223,11 +189,8 @@
                         <img src="img/b12.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Relentless Dead</h5>
-    
-                        </div>
-                        <div class="mb-5 d-flex justify-content-around">
                             <h3>R$63,65</h3>
-                            <button class="btn btn-primary"><a href="desculpe.html">Compre Já</button></a>
+                            <a href="desculpe.html" class="btn btn-primary">Comprar</button></a>
                         </div>
                     </div>
                 </div>
