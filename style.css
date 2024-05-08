@@ -202,15 +202,6 @@ a {
     transition: transform 0.1s;
 }
 
-.card img:hover {
-    transform: scale(1.2);
-}
-
-.card img {
-    transition: transform 0.1s;
-}
-
-
 .tabelas {
     height: 30%;
     width: 70%;
@@ -233,25 +224,21 @@ a {
 }
 .td1 {
     color: aliceblue;
-    padding: auto;
     margin-left: -5%;
 }
 .td2 {
     color: aliceblue;
-    padding: auto;
+    margin-left: 50%;
 }
 .td3 {
-
     color: aliceblue;
-    padding: auto;
+    margin-left: 20%;
 }
 .td4{
-
     color: aliceblue;
-    padding: auto;
+    margin-left: 20%;
 }
 .td5{
-
     color: aliceblue;
     width: 100%;
     padding: auto;
